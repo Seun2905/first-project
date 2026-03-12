@@ -9,7 +9,7 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">Seun</div>
+        <div class="logo">Oluwaseun's</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -20,16 +20,18 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero reveal">
         <div class="hero-content">
             <h1>Welcome to My Portfolio</h1>
             <p>I'm a passionate developer and designer</p>
+            <p class="typing">I am <span id="typedText"></span><span class="cursor">|</span></p>
             <a href="#contact" class="btn">Get In Touch</a>
+            <button id="jsButton" class="btn">Test JavaScript</button>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about reveal">
         <div class="container">
             <h2>About Me</h2>
             <p>Hello! I'm Seun, a creative developer passionate about building beautiful and functional websites. With a focus on user experience and clean code, I love bringing ideas to life through web development.</p>
@@ -37,7 +39,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills reveal">
         <div class="container">
             <h2>My Skills</h2>
             <div class="skills-grid">
@@ -62,7 +64,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects reveal">
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
@@ -86,11 +88,11 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact reveal">
         <div class="container">
             <h2>Get In Touch</h2>
             <p>I'd love to hear from you! Feel free to reach out.</p>
-            <form class="contact-form">
+            <form id="contactForm" class="contact-form">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" rows="5" required></textarea>
@@ -100,8 +102,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer reveal">
         <p>&copy; 2026 Seun's Portfolio. All rights reserved.</p>
     </footer>
+    <script src="seun first project.js"></script>
 </body>
 </html>
