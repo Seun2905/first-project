@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="task%20tracker.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Tracker</h1>
+
+    <div class="top-controls">
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter a new task">
+        <select id="priority">
+          <option value="low">Low Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="high">High Priority</option>
+        </select>
+        <input type="datetime-local" id="dueDate">
+        <button id="addBtn">Add Task</button>
+      </div>
+      <button id="themeToggle">Switch to Light Mode</button>
+    </div>
+
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="Search tasks...">
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+      </select>
+    </div>
+
+    <div class="export-import">
+      <button id="exportBtn">Export Tasks</button>
+      <input type="file" id="importInput" accept=".json">
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+  </div>
+
+  <script src="task%20tracker.js"></script>
+</body>
+</html>
