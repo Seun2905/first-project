@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seun's Portfolio</title>
+    <meta name="description" content="Oluwaseun's web developer portfolio showcasing projects, skills, and contact details.">
+    <meta name="author" content="Oluwaseun" />
+    <title>Oluwaseun | Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,10 +24,14 @@
     <!-- Home Section -->
     <section id="home" class="hero reveal">
         <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I'm a passionate developer and designer</p>
+            <h1>PETER OLUWASEUN ENOCH</h1>
+            <p>Software Engineer • Building fast, accessible web experiences</p>
             <p class="typing">I am <span id="typedText"></span><span class="cursor">|</span></p>
-            <a href="#contact" class="btn">Get In Touch</a>
+            <div class="hero-actions">
+                <a href="#contact" class="btn">Get In Touch</a>
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="resume.pdf" class="btn" download>Download Resume</a>
+            </div>
             <button id="jsButton" class="btn">Test JavaScript</button>
         </div>
     </section>
@@ -34,14 +40,31 @@
     <section id="about" class="about reveal">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! I'm Seun, a creative developer passionate about building beautiful and functional websites. With a focus on user experience and clean code, I love bringing ideas to life through web development.</p>
+            <p>I'm Oluwaseun, a Software Engineer with 3 years of remote experience; I build responsive, scalable, and accessible web applications. I specialize in clean code, strong UX, and practical solutions that ship quickly.</p>
+            <ul class="about-list">
+                <li>3+ years of remote development experience</li>
+                <li>Expert in HTML5, CSS3, JavaScript, React, and Python</li>
+                <li>Strong understanding of user-centric design and accessibility</li>
+                <li>Collaborative in agile and remote teams</li>
+            </ul>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills reveal">
         <div class="container">
             <h2>My Skills</h2>
+            <p class="section-description">Languages, frameworks and tools I use to build production projects.</p>
+            <div class="skill-badges">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Python</span>
+                <span>Node.js</span>
+                <span>Git</span>
+                <span>Figma</span>
+            </div>
             <div class="skills-grid">
                 <div class="skill-item">
                     <h3>HTML & CSS</h3>
@@ -64,24 +87,25 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects reveal">
         <div class="container">
             <h2>Featured Projects</h2>
+            <p class="section-description">Three portfolio projects that demonstrate front-end skill, interactivity, and UI/UX polish.</p>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>A responsive website built with HTML and CSS</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <h3>Portfolio Website</h3>
+                    <p>A primary portfolio site built with HTML/CSS/JavaScript; includes theme toggle, typing animation, form validation, and scroll reveal.</p>
+                    <a href="https://github.com/Seun2905/portfolio" class="project-link" target="_blank">View Repo</a>
                 </div>
                 <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>An interactive web application using JavaScript</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <h3>UI Components Demo</h3>
+                    <p>Interactive component collection with buttons, modals, and cards demonstrating accessible keyboard and mouse interactions.</p>
+                    <a href="https://github.com/Seun2905/ui-components-demo" class="project-link" target="_blank">View Repo</a>
                 </div>
                 <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>A modern portfolio website with smooth animations</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <h3>Task Tracker</h3>
+                    <p>Task management app using vanilla JS and localStorage for data persistence; supports create/update/delete tasks.</p>
+                    <a href="https://github.com/Seun2905/task-tracker" class="project-link" target="_blank">View Repo</a>
                 </div>
             </div>
         </div>
@@ -91,13 +115,21 @@
     <section id="contact" class="contact reveal">
         <div class="container">
             <h2>Get In Touch</h2>
-            <p>I'd love to hear from you! Feel free to reach out.</p>
-            <form id="contactForm" class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            <p>I'd love to hear from you! Send a quick message or connect online.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:seun@example.com">seun@example.com</a></p>
+                    <p>Phone: +234 123 456 7890</p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/seun2905" target="_blank">linkedin.com/in/seun2905</a></p>
+                    <p>GitHub: <a href="https://github.com/Seun2905" target="_blank">github.com/Seun2905</a></p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
