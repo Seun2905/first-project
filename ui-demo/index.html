@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UI Components Demo</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <a href="../index.html" class="nav-link">← Back to Portfolio</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>UI Components Showcase</h1>
+    <p>Interactive demo with accessible buttons, cards, and modal</p>
+  </header>
+
+  <main class="components">
+
+    <!-- Buttons Section -->
+    <section class="section buttons-section" id="buttons">
+      <h2>Buttons</h2>
+      <div class="buttons-demo">
+        <button id="alertBtn">Primary Button</button>
+        <button class="secondary">Secondary Button</button>
+        <button class="danger">Danger Button</button>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="section cards-section" id="cards">
+      <h2>Cards</h2>
+      <div class="cards-demo">
+        <div class="card" tabindex="0" id="card1">
+          <h3>Card One</h3>
+          <p>Click or press Enter/Space</p>
+        </div>
+        <div class="card" tabindex="0" id="card2">
+          <h3>Card Two</h3>
+          <p>Another interactive card</p>
+        </div>
+        <div class="card" tabindex="0" id="card3">
+          <h3>Card Three</h3>
+          <p>Keyboard accessible</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Section -->
+    <section class="section modal-section" id="modal-section">
+      <h2>Modal</h2>
+      <button id="openModal">Open Modal</button>
+      <div class="modal hidden" id="modal" role="dialog" aria-modal="true">
+        <div class="modal-content" tabindex="-1">
+          <h3>Accessible Modal</h3>
+          <p>Press ESC to close or click the button below</p>
+          <button id="closeModal">Close</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="ui.js"></script>
+</body>
+</html>
