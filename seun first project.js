@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const typedTextNode = document.getElementById("typedText");
-  const phrases = ["A Web Developer", "UI/UX Enthusiast", "JavaScript Ninja", "Problem Solver"];
+  const phrases = ["A Software Developer", "Data Analyst", "JavaScript Ninja", "Problem Solver"];
   let phraseIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
