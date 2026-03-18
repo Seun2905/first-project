@@ -367,3 +367,20 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
 }
+/* Fix logo wrapping on laptops and smaller screens */
+.logo {
+    white-space: nowrap; /* Prevent the text from breaking */
+}
+
+/* Optional: make logo slightly smaller on smaller screens */
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+}
