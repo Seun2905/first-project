@@ -384,31 +384,3 @@ body {
         font-size: 1.3rem;
     }
 }
-/* ===============================
-   Navbar & Logo Fixes (Safe)
-   =============================== */
-
-/* Keep logo text on one line */
-.logo {
-    white-space: nowrap;       /* prevents text from breaking */
-    overflow: hidden;          /* hides extra text if space is too small */
-    text-overflow: ellipsis;   /* optional: shows "..." if still too long */
-}
-
-/* Prevent nav items from wrapping */
-.navbar {
-    flex-wrap: nowrap;         /* keeps logo and nav links on a single row */
-}
-
-/* Optional: shrink logo font on smaller screens */
-@media (max-width: 1024px) {
-    .logo {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .logo {
-        font-size: 1.2rem;
-    }
-}
