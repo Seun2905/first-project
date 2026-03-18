@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // JavaScript Test Button
   const jsButton = document.getElementById("jsButton");
   if (jsButton) {
     jsButton.addEventListener("click", function () {
@@ -6,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Typing Animation
   const typedTextNode = document.getElementById("typedText");
   const phrases = ["A Software Developer", "Data Analyst", "JavaScript Ninja", "Problem Solver"];
   let phraseIndex = 0;
@@ -33,8 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   typeLoop();
 
+  // Contact Form
   const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
+  const formMessage = document.getElementById("formMessage");
+
+  if (contactForm && formMessage) {
     contactForm.addEventListener("submit", function (event) {
       event.preventDefault();
 
@@ -43,22 +48,25 @@ document.addEventListener("DOMContentLoaded", function () {
       const message = contactForm.querySelector("textarea").value.trim();
 
       if (!name || !email || !message) {
-        alert("Please fill in all fields.");
+        formMessage.style.color = "red";
+        formMessage.textContent = "Please fill in all fields.";
         return;
       }
 
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
-        alert("Please enter a valid email address.");
+        formMessage.style.color = "red";
+        formMessage.textContent = "Please enter a valid email address.";
         return;
       }
 
-      alert("Message sent successfully! Thank you, " + name + " 👏");
+      formMessage.style.color = "green";
+      formMessage.textContent = `Message sent successfully! Thank you, ${name} 👏`;
       contactForm.reset();
     });
   }
 
-  // Scroll reveal for elements with class .reveal
+  // Scroll Reveal
   const reveals = document.querySelectorAll(".reveal");
   const observerOptions = {
     root: null,
@@ -78,8 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   reveals.forEach((el) => revealObserver.observe(el));
 
-  // Theme persistence with localStorage
+  // Dark Mode / Light Mode Toggle
   const nav = document.querySelector(".navbar");
+
   function applyTheme(theme) {
     if (theme === "dark") {
       document.body.classList.add("dark-theme");
